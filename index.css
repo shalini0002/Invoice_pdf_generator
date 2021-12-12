@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.customer-container{
+    position: absolute;
+    background-color: rgb(255, 241, 224);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    width: 900px;
+}
+
+.cust-cont-header{
+    text-align: center;
+}
+
+.customer-info{
+    /* background-color: cadetblue; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    /* grid-auto-rows: 70px; */
+    margin: 10px 40px;
+
+}
+
+.customer-detail{
+    display: flex;
+    padding: 5px 20px;
+    /* background-color: cornflowerblue; */
+    margin: 5px 0px;
+    border-radius: 10px;
+}
+
+.body-input{
+    padding: 2px 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.customer-detail label{
+    width: 120px;
+    font-size: 16px;
+}
+
+.input-info{
+    width: 200px;
+    margin-left: auto;
+    border: 1px solid black;
+    padding: 2px 5px;
+    font-size: 16px;
+}
+
+.invoice-item{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+    padding: 10px;
+    margin-right: 40px;
+
+}
+
+.invoice-item-first{
+    background-color: rgb(233, 223, 225);
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.item-list{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+
+#product-name{
+    width: 60%;
+}
+
+#product-num,#product-price,#prod{
+    width: 50%;
+}
+
+.invoice-item-body{
+    height: 300px;
+    overflow-y: auto;
+}
+
+.add-invoice-item{
+    width: 30%;
+    background-color: cadetblue;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 4px;
+}
+
+.add-invoice-item:hover{
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+.print-pdf{
+    text-align: center;
+    position:fixed;
+    margin-top: 100px;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.print-pdf:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}

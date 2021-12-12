@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Info</title>
+    <link rel="stylesheet" href="./index.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.debug.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js" ></script>
+</head>
+<body>
+
+    <div class="customer-container" id="invoice-generate">
+
+        <h1 class="cust-cont-header">INVOICE</h1>
+
+        <form>
+
+            <div class="customer-info">
+                <div class="customer-detail">
+                    <label for="name">Customer Name : </label>
+                    <input type="text" name="name" class="input-info">
+                </div>
+                <div class="customer-detail">
+                    <label for="email">Customer Email : </label>
+                    <input type="email" name="email" class="input-info">
+                </div>
+                <div class="customer-detail">
+                    <label for="mob">Customer Mob : </label>
+                    <input type="number" name="mob" class="input-info">
+                </div>
+                <div class="customer-detail">
+                    <label for="add">Customer Add : </label>
+                    <input type="text" name="add" class="input-info">
+                </div>
+            </div>
+
+
+            <div class="invoice-detail">
+                <ul class="invoice-item-header">
+                    <li class="invoice-item invoice-item-first">
+                        <div class="serial-no">S.NO</div>
+                        <div class="item-name">ITEM NAME</div>
+                        <div class="item-quantity">QTY</div>
+                        <div class="item-price">PRICE</div>
+                        <div class="add-invoice">ADD</div>
+                    </li>
+                </ul>
+                <ul class="invoice-item-body">
+                    <li class="invoice-item item-list">
+
+                        <div class="serial-no">1</div>
+
+                        <div class="item-name">
+                            <input type="text" name="product-name" id="product-name" class="body-input" required>
+                        </div>
+
+                        <div class="item-quantity">
+                            <input type="number" name="product-num" class="body-input" id="product-num">
+                        </div>
+
+                        <div class="item-price">
+                            <input type="number" name="product-price" class="body-input" id="product-price">
+                        </div>
+
+                        <div class="add-invoice-item">+</div>
+                    </li>
+                    
+                </ul>
+            </div>
+
+            <div class="footer">
+                <div class="submit">
+                    <input type="submit" value="SUBMIT">
+                </div>
+                <div class="total-price">
+                    <span>TOTAL = </span>
+                    <span class="total-amount">10</span>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+    <button class="print-pdf">PRINT</button>
+    <script src="./index.js"></script>
+</body>
+</html>
